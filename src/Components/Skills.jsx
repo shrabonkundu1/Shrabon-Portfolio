@@ -19,7 +19,7 @@ import figma from '../assets/figma.png';
 import pixso from '../assets/download.jpeg'
 const Skills = () => {
     return (
-        <div className='bg-[#190b1f] h-[5000px] ' id='skills'>
+        <div className='bg-[#190b1f] mb-20 ' id='skills'>
             <h2 className='text-4xl text-center md:mt-10 font-medium text-gray-200 font-ysabeau md:text-6xl font-grotesk'>Skills I Have</h2>
 
             <div className='grid md:grid-cols-2 md:py-24 py-10 md:w-3/4 w-[90%] mx-auto'>
