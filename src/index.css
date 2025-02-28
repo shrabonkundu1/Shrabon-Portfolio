@@ -21,3 +21,7 @@ body {
 p {
     @apply  tracking-tight leading-relaxed
   }
+
+  .font-grotesk {
+    font-family: "Space Grotesk", sans-serif;
+  }
