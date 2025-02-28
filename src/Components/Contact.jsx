@@ -1,20 +1,29 @@
 import Lottie from "lottie-react";
-import React from "react";
+import React, { useEffect } from "react";
 import send from "../Lottie/send.json";
 import contact from "../Lottie/contact.json";
 import { CiLocationOn } from "react-icons/ci";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
+import AOS from "aos";
+import "aos/dist/aos.css";
 const Contact = () => {
+    useEffect(() => {
+        AOS.init({
+          duration: 1500, 
+          easing: "ease-out-quart", 
+          // easing: "ease-in-out"
+        });
+      }, []);
   return (
     <div className="bg-[#190b1f] pb-20 " id="contact">
-      <h2 className="text-4xl text-center md:mt-10 font-medium text-gray-200 font-ysabeau md:text-6xl font-grotesk">
+      <h2 className="text-4xl text-center md:mt-10 font-medium text-gray-200 font-ysabeau md:text-6xl font-grotesk"  data-aos="fade-up">
         Contact Me
       </h2>
 
       {/* <div className="flex flex-col md:flow-row justify-between items-center "> */}
         <div className="flex flex-col md:flex-row md:gap-52 gap-8 items-center justify-center bg-[#190b1f] px-4 mt-16">
-          <div className="w-full max-w-lg bg-[#1c0c23] p-6 rounded-lg shadow-md">
+          <div className="w-full max-w-lg bg-[#1c0c23] p-6 rounded-lg shadow-md"  data-aos="zoom-in">
             <h2 className="text-white text-2xl font-semibold mb-4">
               Send me a message
             </h2>
@@ -57,7 +66,7 @@ const Contact = () => {
               </button>
             </form>
           </div>
-        <div>
+        <div  data-aos="zoom-in">
             <h2 className="text-2xl text-center font-medium text-purple-600 font-ysabeau md:text-4xl font-grotesk">Get In Touch</h2>
           <Lottie animationData={contact} className="w-80 h-72"></Lottie>
         <div className="mt-2 text-left text-xl">

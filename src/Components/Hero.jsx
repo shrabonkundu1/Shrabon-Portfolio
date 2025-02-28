@@ -3,18 +3,13 @@ import portfolioPic from "../assets/Group 3 (3).png";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
 import {
+    AiOutlineFacebook,
   AiOutlineGithub,
   AiOutlineInstagram,
   AiOutlineLink,
   AiOutlineLinkedin,
 } from "react-icons/ai";
-import {
-  DiCss3,
-  DiHtml5,
-  DiJavascript1,
-  DiNodejsSmall,
-  DiReact,
-} from "react-icons/di";
+
 import { motion } from "framer-motion";
 
 const Hero = () => {
@@ -84,16 +79,19 @@ const Hero = () => {
             </motion.button>
 
             <div className="flex gap-6 flex-row text-4xl md:text-6xl text-purple-400 z-20">
+                <motion.a whileHover={{ scale: 1.2 }} href="#">
+                               <a href="https://web.facebook.com/shyam.kundu.9822"> <AiOutlineFacebook /></a>
+                              </motion.a>
               <motion.a whileHover={{ scale: 1.2 }} href="#">
-                <AiOutlineGithub />
+              <a href="https://github.com/shrabonkundu1"><AiOutlineGithub /></a> 
               </motion.a>
 
               <motion.a whileHover={{ scale: 1.2 }} href="#">
-                <AiOutlineLinkedin />
+              <a href="https://github.com/shrabonkundu1"><AiOutlineLinkedin /></a>   
               </motion.a>
 
               <motion.a whileHover={{ scale: 1.2 }} href="#">
-                <AiOutlineInstagram />
+              <a href="https://www.instagram.com/kundushrabon/"> <AiOutlineInstagram /></a> 
               </motion.a>
             </div>
           </motion.div>
