@@ -9,6 +9,7 @@ const Education = () => {
         AOS.init({
           duration: 1000, 
           easing: "ease-out-quart", 
+          once: true
           // easing: "ease-in-out"
         });
       }, []);
@@ -17,7 +18,7 @@ const Education = () => {
             <h2 className='text-4xl text-center md:mt-10 font-medium text-gray-200 font-ysabeau md:text-6xl font-grotesk'  data-aos="fade-up">My Education</h2>
 
             <div className='grid md:grid-cols-3 gap-8  mt-16'>
-                <div className='flex justify-center items-center gap-4 border py-10 px-5 rounded-lg bg-[#230e2c]'  data-aos="flip-right">
+                <div className='flex justify-center items-center gap-4 border py-10 px-5 rounded-lg bg-[#230e2c] '  data-aos="flip-right">
                     <img className='w-28 object-cover  h-28 rounded-lg' src={first} alt="" />
                 <div className=' space-y-1'>
                     <h5 className='text-[18px] font-semibold '>Secondary School Certificate (SSC)</h5>
